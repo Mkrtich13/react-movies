@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-stone-100 font-mono text-sm lg:text-lg;
+  }
+}
+
+@layer components {
+  .btn-animated {
+    @apply transition active:translate-y-0 hover:-translate-y-1;
+  }
+}
